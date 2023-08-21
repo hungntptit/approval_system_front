@@ -1,0 +1,18 @@
+# front/docker-compose.yml
+version: '3.8'
+
+#networks:
+#  mynetwork:
+#    name: mynetwork
+#    external: true
+
+services:
+  front:
+    container_name: approval_system_front
+    hostname: approval_system_front
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5174:5173"
+
