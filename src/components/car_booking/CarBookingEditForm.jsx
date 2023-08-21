@@ -7,8 +7,8 @@ import {useState} from "react";
 
 function CarBookingEditForm(props) {
 
-  const cars = props.cars;
-  const user = props.user;
+  // const cars = props.cars;
+  // const user = props.user;
 
   const [carBooking, setCarBooking] = useState({
     id: props.carBooking.id,

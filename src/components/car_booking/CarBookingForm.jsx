@@ -62,11 +62,6 @@ function CarBookingForm(props) {
       });
   }
 
-
-  function handleRoomChange(e, capacity) {
-    console.log(capacity);
-  }
-
   if (!localStorage.getItem("token")) {
     return "Not logged in.";
   } else {

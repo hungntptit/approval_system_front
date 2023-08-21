@@ -10,7 +10,7 @@ import {Collapse} from "@mui/material";
 import CustomListItem from "./CustomListItem.jsx";
 import jwt from "jwt-decode";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBuilding, faChartLine, faHouse, faListUl, faTable} from "@fortawesome/free-solid-svg-icons";
+import {faChartLine, faHouse, faListUl, faTable} from "@fortawesome/free-solid-svg-icons";
 import {useNavigate} from "react-router-dom";
 
 

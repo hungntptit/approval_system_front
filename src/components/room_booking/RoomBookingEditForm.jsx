@@ -36,8 +36,7 @@ function RoomBookingForm(props) {
     let [hour, minute] = timeString.split(":");
     hour = parseInt(hour);
     minute = parseInt(minute);
-    const time = new Date(0, 0, 0, hour, minute);
-    return time;
+    return new Date(0, 0, 0, hour, minute);
   }
 
   function submitHandler(e) {
@@ -95,10 +94,6 @@ function RoomBookingForm(props) {
       });
   }
 
-
-  function handleRoomChange(e, capacity) {
-    console.log(capacity);
-  }
 
   if (!localStorage.getItem("token")) {
     return "Not logged in";

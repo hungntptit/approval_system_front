@@ -6,7 +6,6 @@ import {useNavigate} from "react-router-dom";
 function RoomRow(props) {
   const navigate = useNavigate();
   const room = props.room;
-  const role = props.role;
 
   function deleteRoomHandler(id) {
     if (window.confirm("Bạn có chắc không?")) {

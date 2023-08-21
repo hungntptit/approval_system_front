@@ -53,10 +53,6 @@ function BuyingRequestForm(props) {
   }
 
 
-  function handleRoomChange(e, capacity) {
-    console.log(capacity);
-  }
-
   if (!localStorage.getItem("token")) {
     return "Not logged in.";
   } else {
@@ -85,7 +81,7 @@ function BuyingRequestForm(props) {
             fullWidth
             size={"small"}
             required
-            inputProps={{ maxLength: 500 }}
+            inputProps={{maxLength: 500}}
           />
           <TextField
             sx={{m: 1}}

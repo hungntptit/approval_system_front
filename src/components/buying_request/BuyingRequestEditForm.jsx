@@ -7,7 +7,7 @@ import {useState} from "react";
 
 function BuyingRequestEditForm(props) {
   const user = props.user;
-  const departments = props.departments;
+  // const departments = props.departments;
 
   const [buyingRequest, setBuyingRequest] = useState({
     id: props.buyingRequest.id,
@@ -78,10 +78,6 @@ function BuyingRequestEditForm(props) {
       });
   }
 
-
-  function handleRoomChange(e, capacity) {
-    console.log(capacity);
-  }
 
   if (!localStorage.getItem("token")) {
     return "Not logged in.";

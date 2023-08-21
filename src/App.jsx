@@ -34,7 +34,7 @@ function App() {
   const [departments, setDepartments] = useState([]);
   const [buyingRequests, setBuyingRequests] = useState([]);
 
-  const [processes, setProcesses] = useState([]);
+  // const [processes, setProcesses] = useState([]);
 
 
   useEffect(() => {
